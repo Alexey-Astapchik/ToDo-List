@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Liu+Jian+Mao+Cao|Paytone+One|Stoke|Turret+Road|Ultra|Unica+One&display=swap" rel="stylesheet">
+  <title>Document</title>
+    <style>
+      body {
+      background:url(background.jpg) no-repeat;
+      -moz-background-size: 100%;
+      -webkit-background-size: 100%;
+      -o-background-size: 100%;
+      background-size: 100%;
+      }
+    </style>
+    
+</head>
+<body style="background-attachment:fixed" topmargin="0">
+  <div class="container">
+
+    <header class="text-center text-light my-4">
+      <h1 class="mb-4" id="list">To-Do</h1>
+
+      <form class="add text-center my-4">
+        <label class="text-light" id="add"><span>Add your new task</span></label>
+        <input class="form-control m-auto" id="add new task" style="color: black;" type="text" name="add" id="new-task">
+      </form>
+    </header>
+
+      <ul class="list-group todos mx-auto text-light" id="incomplete-tasks">
+
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <button type="button" class="btn btn-outline-dark checkbox" id="checkbox">
+            <i class="fas fa-check-circle"></i>
+          </button>
+          <span>First task</span>
+          <button type="button" class="btn btn-outline-dark delete">
+            <i class="fas fa-trash "></i>
+            </button>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <button type="button" class="btn btn-outline-dark checkbox" id="checkbox">
+            <i class="fas fa-check-circle"></i>
+          </button>
+          <span>Second task</span>
+          <button type="button" class="btn btn-outline-dark delete" >
+              <i class="fas fa-trash "></i>
+          </button>
+       </li>
+       <li class="list-group-item d-flex justify-content-between align-items-center">
+          <button type="button" class="btn btn-outline-dark checkbox" id="checkbox">
+            <i class="fas fa-check-circle"></i>
+          </button>
+         <span>Third task</span>
+         <button type="button" class="btn btn-outline-dark delete">
+            <i class="fas fa-trash "></i>
+          </button>
+        </li>
+    </ul>
+
+    <form class="add text-center text-light my-4">
+      <label class="text-light "><span>Completed tasks</span></label>
+      <ul class="list-group todos mx-auto text-light" id="complete-tasks" >
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span>First task</span>
+          <button type="button" class="btn btn-outline-dark delete">
+              <i class="fas fa-trash "></i>
+            </button>
+        </li>
+      </ul>
+    </form>
+    
+
+  </div>
+  <script src="code.js"></script>
+</body>
+</html>

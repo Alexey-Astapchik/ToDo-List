@@ -1,0 +1,36 @@
+body {
+background:url(background.jpg) no-repeat;
+-moz-background-size: 100%;
+-webkit-background-size: 100%;
+-o-background-size: 100%;
+background-size: 100%;
+}
+
+  input[type=text],
+  input[type=text]:focus{
+    color: grey;
+    border: none;
+    background: rgba(0,0,0,0.2);
+    max-width: 400px;
+  }
+  .todos li{
+    background: grey;
+  }
+  .delete{
+    cursor: pointer;
+  }
+  #list{
+    font-family: 'Unica One', cursive;
+    font-size: 100px;
+    color: black;
+  }
+span{
+    color: black;
+    font-family: 'Unica One', cursive;
+    font-size: 30px;
+}
+
+.list-group {
+    width: 70%;
+}
+
